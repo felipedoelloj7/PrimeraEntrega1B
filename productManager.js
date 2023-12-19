@@ -173,28 +173,28 @@ module.exports = ProductManager;
 // instancia de ProductManager con la ruta del archivo
 const productManager = new ProductManager('./data/productos.json');
 
-// agregar productos ficticios (mouse gaming)
-const mouseGaming1 = {
-  title: 'Razer Viper V2 Pro',
+// agregar productos ficticios (Frutas)
+const Fruta= {
+  title: 'ManzanA',
   description: 'Mouse Gaming Razer Viper V2 Pro',
-  price: 120,
+  price: 5,
   thumbnail: 'ruta/imagen1.jpg',
-  code: 'RVV2P',
+  code: '00045',
   stock: 20,
 };
 
-const mouseGaming2 = {
-  title: 'Logitech Superlight V2',
-  description: 'Mouse Gaming Logitech Superlight V2',
-  price: 150,
+const Fruta2 = {
+  title: 'Banana',
+  description: 'BananA',
+  price: 6,
   thumbnail: 'ruta/imagen2.jpg',
-  code: 'LSLV2',
-  stock: 15,
+  code: '00046',
+  stock: 12,
 };
 
 // agregar los productos al ProductManager
-productManager.addProduct(mouseGaming1);
-productManager.addProduct(mouseGaming2);
+productManager.addProduct(Fruta);
+productManager.addProduct(Fruta2);
 
 // exportar la instancia de ProductManager
 module.exports = productManager;

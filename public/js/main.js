@@ -5,7 +5,7 @@ const socket = io();
 socket.on('productAdded', (newProduct) => {
   // Actualizar la lista de productos en el cliente con el nuevo producto
   console.log(`Nuevo producto agregado: ${JSON.stringify(newProduct)}`);
-  // Agregar lógica para actualizar tu interfaz de usuario con el nuevo producto
+  // Agregar lógica para actualizarnode index.js tu interfaz de usuario con el nuevo producto
 });
 
 // Escuchar el evento 'productDeleted' del servidor
